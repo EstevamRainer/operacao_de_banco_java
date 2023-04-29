@@ -7,7 +7,10 @@ public class Main {
         String tipoDaConta = "Corrente";
         double saldo = 2500.500;
         String mensagemInicial;
+        String dadosPessoais;
         mensagemInicial = """
+                -----------------------------------------------
+                Bem Vindo ao Java Bank!
                 ***********************************************
                 Dados Iniciais do Cliente:
                 
@@ -52,16 +55,16 @@ public class Main {
                     }
                 }
                 case 4 -> {
-                    mensagemInicial = """
+                    dadosPessoais = """
                 ***********************************************
-                Dados Iniciais do Cliente:
+                Dados Pessoais do Cliente:
                 
                 Nome do Titual : %s
                 Tipo de Conta : %s
                 Saldo : %s
                 ***********************************************
                 """ .formatted(nomeDoTitular, tipoDaConta, saldo);
-                    System.out.println(mensagemInicial);
+                    System.out.println(dadosPessoais);
                 }
                 case 5 -> {
                     System.out.println("Muito Obrigado por utilizar o nosso serviço! Tenha um ótiomo dia!");
